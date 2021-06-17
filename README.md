@@ -114,7 +114,3 @@ The playbook implements the following tasks:
 - Sysctl module to be able to use more memory 
 - Docker_container module downloads and launches docker to the elk container and indicates which ports that ELK should run on
 - Systemd Module enables service docker on boot
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
-
-Target Machines & Beats
