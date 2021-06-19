@@ -86,3 +86,36 @@ JumpBoxProvisioner 10.0.0.4, ELK-VM 10.1.0.4, Web-1 10.0.0.5, Web-2 10.0.0.6
 #### We have installed the following Beats on these machines:
 I have installed Metricbeat and filebeat to my virtual machines
 
+#### These Beats allow us to collect the following information from each machine:
+Filebeat monitors log files and/or specified locations, collects log events and then sends the information to Elasticsearch.  It will collect data such as hostname and system logs
+Metricbeat records system and service metrics.  This data is then typically set up to be sent to Elasticsearch; however, it can also be set up to a messaging or queuing buffer. This provides us with operating system data such as CPU, RAM, and network usage.
+
+
+### Using the Playbook
+
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
+
+SSH into the control node and follow the steps below:
+- Copy the .yml file to /etc/ansible directory.
+- Update the hosts file to include...
+- Run the playbook, and navigate to JumpBoxProvisioner to check that the installation worked as expected.
+
+#### Which file is the playbook? Where do you copy it?_
+Filebeat-playbook.yml and metricbeat-playbook.yml  These playbooks are copied into the /etc/ansible/roles directory.
+
+#### Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+The /etc/ansible/hosts file is updated in order for Ansible to run the playbook on a specific machine.  You can determine which machine in which you would like to install the ELK server vs the Filebeat by assigning the appropriate IP addresses in the playbook.
+
+#### Which URL do you navigate to in order to check that the ELK server is running?
+http://20.56.59.99:5601/app/kibana
+
+### As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
+#### To install ansible playbook
+ansible-playbook metricbeat-playbook.yml
+ansible-playbook filebeat-playbook.yml
+#### To download to the repository
+git clone “https://github.com/lchuber1990/Project1”
+#### To sync all items
+git add .
+git commit -m “First commit”
+git push
