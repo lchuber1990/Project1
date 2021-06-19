@@ -1,6 +1,6 @@
 
 ---
-- name: Install metric beat
+- name: Install metric beat 
   hosts: webservers
   become: true
   tasks:
