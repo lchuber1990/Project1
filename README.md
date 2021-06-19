@@ -19,16 +19,19 @@ This document contains the following details:
   - Machines Being Monitored
 - How to Use the Ansible Build
 
-#### H4 Description of the Topology
+### Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly dynamic, in addition to restricting access to the network.
--What aspect of security do load balancers protect? What is the advantage of a jump box?  
+
+##### What aspect of security do load balancers protect? What is the advantage of a jump box?  
 	A load balancer distributes traffic across multiple servers.  This provides the user with optimal service.  Load balancers enhance the security, performance, resilience, and scalability of a website.  Many load balancers include a Web Application Firewall (WAF) that protects against incoming threats.  Load balancers also help prevent DDoS attacks. DDoS attacks try to overwhelm a server, whereas a load balancer distributes traffic which helps prevent a server from becoming overloaded.
 	The jump box is a virtual machine that is security hardened.  A jump box bridges 2 networks and the jump box virtual machine acts as a toll booth: all traffic must go through it before using the network.  This is beneficial because all necessary data regarding incoming traffic will be logged through the jump box.  Another advantage is that it allows you to easily turn on/off the remote desktop protocol.
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the configuration and system files.
--What does Filebeat watch for? Filebeat monitors log files and/or specified locations, collects log events and then sends the information to Elasticsearch or Logstash.  
--What does Metricbeat record? Metricbeat records system and service metrics.  This data is then typically set up to be sent to Elasticsearch; however, it can also be set up to a messaging or queuing buffer.
+##### What does Filebeat watch for? 
+	Filebeat monitors log files and/or specified locations, collects log events and then sends the information to Elasticsearch or Logstash.  
+##### What does Metricbeat record? 
+	Metricbeat records system and service metrics.  This data is then typically set up to be sent to Elasticsearch; however, it can also be set up to a messaging or queuing buffer.
 
 The configuration details of each machine may be found below.
 
