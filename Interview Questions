@@ -7,5 +7,5 @@ recommended that the port is changed to a number much higher than 22 and one tha
 security group invalid.  If you were to attempt to SSH into a virtual machine that doesn’t accept SSH connections, it will deny the connection but it would not send a 
 rejection notification back. When this issue occurs, it can be due to an error in inbound security rules for that Virtual Machines Network Security group.  In order to 
 correct this, an inbound security rule will be made in the appropriate security group that is set to current SSH port with the action Deny selected.  Attempting a SSH 
-connection to your Virtual Machine will let you know if the new security group rule was effective.  Nothing is ever immune in the cyber world, as a cyber security specialist 
-we can only mitigate risks.  Changing the default SSH port and using unique key pairings are way to mitigate the risk of exposure.  
+connection to your Virtual Machine will let you know if the new security group rule was effective.  Nothing is ever immune in the cyber world, as a cyber security 
+specialist we can only mitigate risks.  Changing the default SSH port and using unique key pairings are way to mitigate the risk of exposure.  
