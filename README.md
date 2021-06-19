@@ -118,11 +118,19 @@ http://20.56.59.99:5601/app/kibana
 
 ### As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 #### To install ansible playbook
+  
 ansible-playbook metricbeat-playbook.yml
+
 ansible-playbook filebeat-playbook.yml
+
 #### To download to the repository
+
 git clone “https://github.com/lchuber1990/Project1”
+
 #### To sync all items
+
 git add .
+
 git commit -m “First commit”
+
 git push
