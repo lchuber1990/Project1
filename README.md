@@ -102,7 +102,8 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the .yml file to /etc/ansible directory.
 - Update the hosts file to include webservers
-- Run the playbook, and navigate to JumpBoxProvisioner to check that the installation worked as expected.
+![diagram](https://github.com/lchuber1990/Project1/blob/main/Host%20file%20update.JPG)
+- Run the playbook (using ansible-playbook <file>), and navigate to JumpBoxProvisioner to check that the installation worked as expected.
 
 #### Which file is the playbook? Where do you copy it?_
 Filebeat-playbook.yml and metricbeat-playbook.yml  These playbooks are copied into the /etc/ansible/roles directory.
