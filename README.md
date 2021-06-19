@@ -19,7 +19,8 @@ This document contains the following details:
   - Machines Being Monitored
 - How to Use the Ansible Build
 
-Description of the Topology
+#Description of the Topology
+
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly dynamic, in addition to restricting access to the network.
 -What aspect of security do load balancers protect? What is the advantage of a jump box?  
@@ -30,7 +31,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 -What does Metricbeat record? Metricbeat records system and service metrics.  This data is then typically set up to be sent to Elasticsearch; however, it can also be set up to a messaging or queuing buffer.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function  | IP Address | Operating System |
 |----------|-----------|------------|------------------|
