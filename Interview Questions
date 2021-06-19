@@ -1,5 +1,6 @@
-## Question 1:  Faulty Firewall
-### Suppose you have a firewall that's supposed to block SSH connections, but instead lets them through. How would you debug it?
+Question 1:  Faulty Firewall
+Suppose you have a firewall that's supposed to block SSH connections, but instead lets them through. How would you debug it?
+
 To connect securely to a remote computer or server, a secure shell (SSH) is used.  An encrypted connection is granted after connection is initiated and credentials
 are verified.  Afirewall that is allowing SSH connections to go through instead of blocking the SSH connection can be caused several ways.  During Project 1, I created 
 an inbound security rule for the Elk-VM network security group that allowed the SSH action to occur.  All Virtual Machines for project 1 have the same port assigned to 
