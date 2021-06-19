@@ -92,12 +92,16 @@ Metricbeat records system and service metrics.  This data is then typically set 
 
 
 ### Using the Playbook
+[filebeat-playbook.yml](https://github.com/lchuber1990/Project1/blob/main/filebeat-playbook.yml)
+[metricbeat-playbook.yml](https://github.com/lchuber1990/Project1/blob/main/metricbeat-playbook.yml)
+[install-elk.yml](https://github.com/lchuber1990/Project1/blob/main/install-elk.yml)
+
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
 - Copy the .yml file to /etc/ansible directory.
-- Update the hosts file to include...
+- Update the hosts file to include webservers
 - Run the playbook, and navigate to JumpBoxProvisioner to check that the installation worked as expected.
 
 #### Which file is the playbook? Where do you copy it?_
