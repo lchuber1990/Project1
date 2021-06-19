@@ -1,0 +1,45 @@
+Add the sample web log data to Kibana.
+
+Answer the following questions:
+
+In the last 7 days, how many unique visitors were located in India? 245
+
+In the last 24 hours, of the visitors from China, how many were using Mac OSX? 10
+
+In the last 2 days, what percentage of visitors received 404 errors? How about 503 errors? 0
+![diagram](https://github.com/lchuber1990/Project1/blob/main/404%20and%20503.JPG)
+
+In the last 7 days, what country produced the majority of the traffic on the website? China
+
+Of the traffic that's coming from that country, what time of day had the highest amount of activity? 6:00am
+
+List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file type (use Google if you aren't sure about a particular file type).
+Css- Cascading Style Sheet.  Describes how HTML components are displayed
+Gz- Files that are compressed using gzip algorithm
+Zip-  An archive that have more that one file in it that is compressed
+Deb- Debian Linux Package file.  DEB files are used for installing packages that contains software development for Linux operating systems
+Rpm- Red Hat Package Manager File.  RPM files have installation packages on linux operating systems
+Now that you have a feel for the data, Let's dive a bit deeper. Look at the chart that shows Unique Visitors Vs. Average Bytes.
+
+Locate the time frame in the last 7 days with the most amount of bytes (activity). 6-13-21 at 2100
+In your own words, is there anything that seems potentially strange about this activity?  This activity is strange because the average number of bytes (10,735.667) being used is significantly higher than the number of unique users (3)
+Filter the data by this event.
+
+What is the timestamp for this event? Jun 13 at 2155
+What kind of file was downloaded? RPM
+From what country did this activity originate? India
+What HTTP response codes were encountered by this visitor? 200
+
+Switch to the Kibana Discover page to see more details about this activity.
+
+What is the source IP address of this activity? 35.143.166.159
+What are the geo coordinates of this activity? { "lat": 43.34121, "lon": -73.6103075 }
+What OS was the source machine running? Win 8
+What is the full URL that was accessed? https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-6.3.2-i686.rpm
+From what website did the visitor's traffic originate? artifacts.elastic.co
+Finish your investigation with a short overview of your insights.
+
+What do you think the user was doing?  Since the user downloaded a RMP file, they are potentially trying to install packages on a linux operating system
+Was the file they downloaded malicious? If not, what is the file used for?  No, not malicious.  They are utilizing the file to download metricbeat to their operating system.
+Is there anything that seems suspicious about this activity? Yes, the refer header is coming from an facebook account requesting for metric beats.
+Is any of the traffic you inspected potentially outside of compliance guidlines?  Yes, coming from a public social media webpage there should not be any connection to metricbeat data.
