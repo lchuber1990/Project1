@@ -102,7 +102,9 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the .yml file to /etc/ansible directory.
 - Update the hosts file to include webservers
+
 ![diagram](https://github.com/lchuber1990/Project1/blob/main/Host%20file%20update.JPG)
+
 - Run the playbook (using ansible-playbook <file>), and navigate to JumpBoxProvisioner to check that the installation worked as expected.
 
 #### Which file is the playbook? Where do you copy it?_
