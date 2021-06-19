@@ -47,7 +47,7 @@ The configuration details of each machine may be found below.
 #### Access Policies
 The machines on the internal network are not exposed to the public Internet.
 
-#####Only the jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+##### Only the jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 Only my IP address is whitelisted.
 
 Machines within the network can only be accessed by the JumpBoxProvisioner.
@@ -77,6 +77,12 @@ The playbook implements the following tasks:
 - Systemd Module enables service docker on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-[Diagram](https://github.com/lchuber1990/Project1/blob/main/elk%20vm%20docker%20running%20elk.JPG)
+![Diagram](https://github.com/lchuber1990/Project1/blob/main/elk%20vm%20docker%20running%20elk.JPG)
 
+### Target Machines & Beats
+#### This ELK server is configured to monitor the following machines:
+JumpBoxProvisioner 10.0.0.4, ELK-VM 10.1.0.4, Web-1 10.0.0.5, Web-2 10.0.0.6
+
+#### We have installed the following Beats on these machines:
+I have installed Metricbeat and filebeat to my virtual machines
 
