@@ -77,4 +77,6 @@ The playbook implements the following tasks:
 - Systemd Module enables service docker on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+[Diagram](https://github.com/lchuber1990/Project1/blob/main/elk%20vm%20docker%20running%20elk.JPG)
+
 
